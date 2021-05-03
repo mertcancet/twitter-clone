@@ -1,18 +1,37 @@
 import React from 'react';
+import Button from './Button';
 
 const Sidebar = () => {
   return (
-    <div className='border border-black bg-blue-500 w-[275px] h-screen flex flex-col justify-between p-1'>
-      <div className='flex flex-col'>
-        <span>Logo</span>
-        <span>Anasayfa</span>
-        <span>Keşfet</span>
-        <span>Mesajlar</span>
-        <span>Yer İşaretleri</span>
-        <span>Lısteler</span>
-        <span>Profil</span>
-        <span>Daha Fazla</span>
-        <button>Tweetle</button>
+    <div className=' w-[275px] h-screen flex flex-col justify-between p-1'>
+      <div className='flex flex-col items-start'>
+        <Button secondary>
+          <span>Logo</span>
+        </Button>
+        <Button secondary>
+          <span>Anasayfa</span>
+        </Button>
+        <Button secondary>
+          <span>Keşfet</span>
+        </Button>
+        <Button secondary>
+          <span>Mesajlar</span>
+        </Button>
+        <Button secondary>
+          <span>Yer İşaretleri</span>
+        </Button>
+        <Button secondary>
+          <span>Listeler</span>
+        </Button>
+        <Button secondary>
+          <span>Profil</span>
+        </Button>
+        <Button secondary>
+          <span>Daha Fazla</span>
+        </Button>
+        <Button primary className='w-full'>
+          Tweetle
+        </Button>
       </div>
       <span>profil resmi</span>
     </div>
