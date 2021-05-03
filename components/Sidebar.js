@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-
+import Image from 'next/image';
 const Sidebar = () => {
   return (
     <div className=' w-[275px] h-screen flex flex-col justify-between p-1'>
@@ -33,7 +33,27 @@ const Sidebar = () => {
           Tweetle
         </Button>
       </div>
-      <span>profil resmi</span>
+
+      <div className='flex justify-between '>
+        <div className='flex'>
+          <div className='mr-2'>
+            <Image
+              className='rounded-full '
+              src='/images/profile-image.jpg'
+              alt='profile'
+              height={48}
+              width={48}
+            />
+          </div>
+
+          <div className='flex flex-col'>
+            <span className='font-bold'>Mertcan</span>
+            <span className='text-gray'>@MertcanCet</span>
+          </div>
+        </div>
+
+        <div className='font-bold leading-10 '>...</div>
+      </div>
     </div>
   );
 };
