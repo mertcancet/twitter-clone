@@ -1,21 +1,21 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Content from '../components/Content';
-import Rightbar from '../components/Rightbar';
+import Timeline from '../components/Timeline';
 import Sidebar from '../components/Sidebar';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Twitter Clone</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <Layout>
         <Sidebar />
         <Content />
-        <Rightbar />
+        <Timeline />
       </Layout>
     </div>
   );

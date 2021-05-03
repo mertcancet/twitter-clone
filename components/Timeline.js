@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Rightbar = () => {
+const Timeline = () => {
   return (
     <div className='bg-purple-600 border border-pink-400 w-[355px]'>
       Right bar
@@ -8,4 +8,4 @@ const Rightbar = () => {
   );
 };
 
-export default Rightbar;
+export default Timeline;
