@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   Home,
   Hashtag,
@@ -10,33 +11,49 @@ import {
   List,
   More,
   Logo,
+  Bell,
 } from '../icons';
 
 const navList = [
   {
     icon: <Home className={'sidebar-icon'} />,
     title: 'Anasayfa',
+    href: '/',
   },
   {
     icon: <Hashtag className={'sidebar-icon'} />,
     title: 'Keşfet',
+    href: '/kesfet',
+  },
+  {
+    icon: <Bell className={'sidebar-icon'} />,
+    title: 'Bildirimler',
+    href: '/bildirimler',
   },
   {
     icon: <Message className={'sidebar-icon'} />,
     title: 'Mesajlar',
+    href: '/mesajlar',
   },
   {
     icon: <Notification className={'sidebar-icon'} />,
     title: 'Yer İşaretleri',
+    href: '/yer-isaretleri',
   },
-  { icon: <List className={'sidebar-icon'} />, title: 'Listeler' },
+  {
+    icon: <List className={'sidebar-icon'} />,
+    title: 'Listeler',
+    href: '/listeler',
+  },
   {
     icon: <Profile className={'sidebar-icon'} />,
     title: 'Profil',
+    href: '/profil',
   },
   {
     icon: <More className={'sidebar-icon'} />,
     title: 'Daha fazla',
+    href: '/daha-fazla',
   },
 ];
 
@@ -47,19 +64,25 @@ const Sidebar = () => {
         <Button secondary className='text-xl '>
           <Logo className={'sidebar-icon'} />
         </Button>
-        {navList.map((item) => (
-          <span className='sidebar-nav-item group-hover:text-primary'>
-            {item.icon}
-            <span>{item.title}</span>
-          </span>
-        ))}
+        <ul>
+          {navList.map((item) => (
+            <li className='sidebar-nav-item group-hover:text-primary'>
+              <Link href={item.href}>
+                <a className='flex'>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-        <Button primary className='w-full'>
+        <Button primary className='w-full py-3'>
           Tweetle
         </Button>
       </div>
 
-      <div className='flex justify-between pr-5'>
+      <div className='flex justify-between px-3 py-2 hover:bg-primary-darkest  rounded-full '>
         <div className='flex'>
           <div className='mr-2'>
             <Image

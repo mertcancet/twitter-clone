@@ -23,9 +23,9 @@
         @apply  border-[#38444d] 
     }
     .sidebar-nav-item{
-        @apply text-xl btn btn-secondary cursor-pointer flex
+        @apply text-xl btn btn-secondary cursor-pointer flex my-5
     }
     .sidebar-icon{
-        @apply text-white w-7 h-7 mr-2 hover:text-primary
+        @apply text-white w-7 h-7 mr-2 
     }
 }
