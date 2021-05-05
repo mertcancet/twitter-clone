@@ -1,12 +1,12 @@
 import React from 'react';
-import Button from './Button';
 
 const Content = () => {
   return (
     <div className=' flex-1'>
-      Content
-      <Button primary>Button</Button>
-      <Button secondary>Button</Button>
+      <div className='flex justify-between p-5 twitter-border border-b-[0.7px]'>
+        <span className='font-extrabold text-xl '>Anasayfa</span>
+        <span>icon</span>
+      </div>
     </div>
   );
 };

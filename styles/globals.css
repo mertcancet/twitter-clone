@@ -13,10 +13,19 @@
     .btn{
         @apply m-1 rounded-3xl font-bold 
     }
-    .primary{
+    .btn-primary{
         @apply bg-primary px-5 py-1 hover:bg-primary-dark
     }
-    .secondary{ 
+    .btn-secondary{ 
         @apply bg-transparent px-3 py-2 hover:text-primary-dark   hover:bg-primary-darkest
+    }
+    .twitter-border{
+        @apply  border-[#38444d] 
+    }
+    .sidebar-nav-item{
+        @apply text-xl btn btn-secondary cursor-pointer flex
+    }
+    .sidebar-icon{
+        @apply text-white w-7 h-7 mr-2 hover:text-primary
     }
 }
