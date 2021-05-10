@@ -13,45 +13,46 @@ import {
   Logo,
   Bell,
 } from '../icons';
+import SidebarLink from './SidebarLink';
 
 const navList = [
   {
-    icon: <Home className={'sidebar-icon'} />,
+    icon: Home,
     title: 'Anasayfa',
     href: '/',
   },
   {
-    icon: <Hashtag className={'sidebar-icon'} />,
+    icon: Hashtag,
     title: 'Keşfet',
     href: '/kesfet',
   },
   {
-    icon: <Bell className={'sidebar-icon'} />,
+    icon: Bell,
     title: 'Bildirimler',
     href: '/bildirimler',
   },
   {
-    icon: <Message className={'sidebar-icon'} />,
+    icon: Message,
     title: 'Mesajlar',
     href: '/mesajlar',
   },
   {
-    icon: <Notification className={'sidebar-icon'} />,
+    icon: Notification,
     title: 'Yer İşaretleri',
     href: '/yer-isaretleri',
   },
   {
-    icon: <List className={'sidebar-icon'} />,
+    icon: List,
     title: 'Listeler',
     href: '/listeler',
   },
   {
-    icon: <Profile className={'sidebar-icon'} />,
+    icon: Profile,
     title: 'Profil',
     href: '/profil',
   },
   {
-    icon: <More className={'sidebar-icon'} />,
+    icon: More,
     title: 'Daha fazla',
     href: '/daha-fazla',
   },
@@ -65,15 +66,13 @@ const Sidebar = () => {
           <Logo className={'sidebar-icon'} />
         </Button>
         <ul>
-          {navList.map((item) => (
-            <li className='sidebar-nav-item group-hover:text-primary'>
-              <Link href={item.href}>
-                <a className='flex'>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </a>
-              </Link>
-            </li>
+          {navList.map((item, i) => (
+            <SidebarLink
+              title={item.title}
+              href={item.href}
+              Icon={item.icon}
+              key={i}
+            />
           ))}
         </ul>
 
