@@ -7,17 +7,6 @@ const SidebarLink = ({ title, href, Icon }) => {
   console.log(router);
   return (
     <li className='cursor-pointer'>
-      {/* <li className='sidebar-nav-item group '>
-              <Link href={item.href}>
-                <a className='flex '>
-                  <div className='flex group-hover:text-primary'>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </div>
-                </a>
-              </Link>
-            </li> */}
-
       <Link href={href}>
         <a>
           <div className='inline-block m-2'>
