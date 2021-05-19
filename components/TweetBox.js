@@ -17,6 +17,8 @@ const TweetBox = () => {
             className=' focus:outline-none bg-[#15202B] font-semibold text-lg mt-2 ml-3 w-full outline-none overflow-hidden resize-none'
             placeholder='Neler oluyor?'
           />
+
+          
           <div className='absolute bottom-0  flex '>
             <Media className='w-12 h-12 text-primary-dark p-3  hover:bg-primary-darkest hover:rounded-full' />{' '}
             <Gif className='w-12 h-12 text-primary-dark p-3    hover:bg-primary-darkest hover:rounded-full' />{' '}

@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import cx from 'classnames';
 const SidebarLink = ({ title, href, Icon }) => {
   const router = useRouter();
-  console.log(router);
+
   return (
     <li className='cursor-pointer'>
       <Link href={href}>
