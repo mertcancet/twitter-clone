@@ -5,7 +5,7 @@ import Button from './Button';
 
 const TweetBox = () => {
   return (
-    <div className='flex justify-between h-[125px]   twitter-border  border-[0.7px]'>
+    <div className='flex justify-between h-[125px]   twitter-border  border-b-[0.7px]'>
       <div className='ml-2 mt-1 flex items-start '>
         <img
           className='rounded-full w-12 h-12'
@@ -18,7 +18,6 @@ const TweetBox = () => {
             placeholder='Neler oluyor?'
           />
 
-          
           <div className='absolute bottom-0  flex '>
             <Media className='w-12 h-12 text-primary-dark p-3  hover:bg-primary-darkest hover:rounded-full' />{' '}
             <Gif className='w-12 h-12 text-primary-dark p-3    hover:bg-primary-darkest hover:rounded-full' />{' '}

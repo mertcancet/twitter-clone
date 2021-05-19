@@ -1,5 +1,6 @@
 import React from 'react';
 import { PopulerTweets } from '../icons';
+import Divider from './Divider';
 import TweetBox from './TweetBox';
 
 const Content = () => {
@@ -10,6 +11,7 @@ const Content = () => {
         <PopulerTweets className='w-10 h-10 text-primary rounded-full p-2 hover:bg-primary-darkest ' />
       </div>
       <TweetBox />
+      <Divider/>
     </div>
   );
 };
