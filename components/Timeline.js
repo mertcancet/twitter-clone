@@ -10,7 +10,7 @@ const Timeline = () => {
           sourceType='profile'
           screenName='reactjs'
           theme='dark'
-          options={{ height: '800' }}
+          options={{ height: 'calc(100vh - 85px)' }}
         />
       </div>
     </div>
