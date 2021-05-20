@@ -93,13 +93,13 @@ const Sidebar = () => {
             />
           </div>
 
-          <div className='flex flex-col'>
+          <div className=' flex-col hidden md:flex'>
             <span className='font-bold'>Mertcan</span>
             <span className='text-gray'>@MertcanCet</span>
           </div>
         </div>
 
-        <div className='font-bold leading-10 '>...</div>
+        <div className='font-bold leading-10  hidden sm:block'>...</div>
       </div>
     </div>
   );
