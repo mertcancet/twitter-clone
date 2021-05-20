@@ -12,7 +12,9 @@ const FeedItem = ({ tweet }) => {
             <span className='font-bold mr-2'> {displayName}</span>
             <span className='text-gray-dark mr-2'>{userName}</span>
             <div className='h-1 w-1 rounded-full bg-gray-dark mr-2' />
-            <span className='text-gray-dark '>3sn</span>
+            <span className='text-gray-dark '>
+              {timestamp?.toDate().toLocaleTimeString('tr-TR')}
+            </span>
           </div>
           <div>{content}</div>
           <div>icons</div>
