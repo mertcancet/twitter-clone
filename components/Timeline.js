@@ -3,7 +3,7 @@ import SearchBox from './SearchBox';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 const Timeline = () => {
   return (
-    <div className=' w-[355px]'>
+    <div className=' w-[355px] hidden md:block'>
       <SearchBox />
       <div className='m-3 h-[100vh-60px]'>
         <TwitterTimelineEmbed
