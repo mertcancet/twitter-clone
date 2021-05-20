@@ -1,13 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PopulerTweets } from '../icons';
 import Divider from './Divider';
 import TweetBox from './TweetBox';
-
+import db from '../firebase';
+import FeedList from './FeedList';
 const Content = () => {
-
+  const [tweets, setTweets] = useState([]);
   useEffect(() => {
-
-  }, [])
+    db.collection('feed')
+      .orderBy('timestamp', 'desc')
+      .onSnapshot((snapshot) =>
+        setTweets(snapshot.docs.map((doc) => doc.data()))
+      );
+  }, []);
+  console.log(tweets);
   return (
     <div className=' flex-1 twitter-border  border-r-[0.7px]'>
       <div className='flex justify-between p-5 twitter-border border-b-[0.7px] items-center'>
@@ -16,6 +22,8 @@ const Content = () => {
       </div>
       <TweetBox />
       <Divider />
+
+      <FeedList tweets={tweets} />
     </div>
   );
 };
