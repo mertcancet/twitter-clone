@@ -34,7 +34,7 @@ const TweetBox = () => {
             value={content}
           />
 
-          <div className='absolute bottom-0  flex '>
+          <div className='absolute bottom-0 hidden  sm:flex '>
             <Media className='w-12 h-12 text-primary-dark p-3  hover:bg-primary-darkest hover:rounded-full' />{' '}
             <Gif className='w-12 h-12 text-primary-dark p-3    hover:bg-primary-darkest hover:rounded-full' />{' '}
             <Survey className='w-12 h-12 text-primary-dark p-3 hover:bg-primary-darkest hover:rounded-full' />{' '}
