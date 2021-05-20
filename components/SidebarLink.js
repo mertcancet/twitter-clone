@@ -19,7 +19,7 @@ const SidebarLink = ({ title, href, Icon }) => {
               )}
             >
               <Icon className='w-7 h-7 mr-4 ' />
-              <span className='font-bold'>{title}</span>
+              <span className='font-bold hidden sm:flex '>{title}</span>
             </div>
           </div>
         </a>
