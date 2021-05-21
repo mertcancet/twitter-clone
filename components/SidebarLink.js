@@ -12,13 +12,13 @@ const SidebarLink = ({ title, href, Icon }) => {
           <div className='inline-block m-2'>
             <div
               className={cx(
-                'flex hover:text-primary text-xl rounded-3xl py-2 pr-6 pl-3  hover:bg-primary-darkest',
+                'flex hover:text-primary text-xl rounded-3xl py-2 md:pr-6 pl-3  hover:bg-primary-darkest',
                 {
                   'text-primary': router.pathname === href,
                 }
               )}
             >
-              <Icon className='w-7 h-7 mr-4 ' />
+              <Icon className='w-7 h-7 sm:mr-4 ' />
               <span className='font-bold hidden sm:flex '>{title}</span>
             </div>
           </div>
