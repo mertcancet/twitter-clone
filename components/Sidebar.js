@@ -12,6 +12,7 @@ import {
   More,
   Logo,
   Bell,
+  WriteTweet,
 } from '../icons';
 import SidebarLink from './SidebarLink';
 
@@ -60,7 +61,7 @@ const navList = [
 
 const Sidebar = () => {
   return (
-    <div className=' w-[275px] h-screen flex flex-col justify-between p-1 twitter-border  border-r-[0.7px]'>
+    <div className=' m-w-[275px] h-screen flex flex-col justify-between p-1 twitter-border  border-r-[0.7px]'>
       <div className='flex flex-col items-start pr-8'>
         <Button secondary className='text-xl '>
           <Logo className={'sidebar-icon'} />
@@ -76,7 +77,10 @@ const Sidebar = () => {
           ))}
         </ul>
 
-        <Button primary className='w-full py-3'>
+        <div className='btn-primary rounded-full p-3 m-2 sm:hidden'>
+          <WriteTweet className='w-7 h-7 ' />
+        </div>
+        <Button primary className='w-full py-3 hidden sm:block'>
           Tweetle
         </Button>
       </div>
