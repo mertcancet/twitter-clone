@@ -12,7 +12,7 @@ const SidebarLink = ({ title, href, Icon }) => {
           <div className='inline-block m-2'>
             <div
               className={cx(
-                'flex hover:text-primary text-xl rounded-3xl py-2 md:pr-6 pl-3  hover:bg-primary-darkest',
+                'flex hover:text-primary text-xl rounded-3xl py-2 pr-2 px-2 md:pr-6 md:pl-3  hover:bg-primary-darkest',
                 {
                   'text-primary': router.pathname === href,
                 }
