@@ -61,7 +61,7 @@ const navList = [
 
 const Sidebar = () => {
   return (
-    <div className=' m-w-[275px] h-screen flex flex-col justify-between p-1 twitter-border  border-r-[0.7px]'>
+    <div className=' m-w-[275px] h-screen sticky top-0 flex flex-col justify-between p-1 twitter-border  border-r-[0.7px]'>
       <div className='flex flex-col items-start pr-8'>
         <Button secondary className='text-xl '>
           <Logo className={'sidebar-icon'} />

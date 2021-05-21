@@ -16,7 +16,7 @@ const Content = () => {
 
   return (
     <div className=' flex-1 twitter-border  border-r-[0.7px]'>
-      <div className='static  flex justify-between p-5 twitter-border border-b-[0.7px] items-center  '>
+      <div className='sticky top-0 z-10 bg-[#15202B]  flex justify-between p-5 twitter-border border-b-[0.7px] items-center  '>
         <span className='font-extrabold text-xl '>Anasayfa</span>
         <PopulerTweets className='w-10 h-10 text-primary rounded-full p-2 hover:bg-primary-darkest ' />
       </div>
