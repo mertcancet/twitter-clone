@@ -15,3 +15,7 @@ export { default as Plan } from './Plan';
 export { default as Survey } from './Survey';
 export { default as Search } from './Search';
 export { default as WriteTweet } from './WriteTweet';
+export { default as Comment } from './Comment';
+export { default as Retweet } from './Retweet';
+export { default as Favorite } from './Favorite';
+export { default as Share } from './Share';
