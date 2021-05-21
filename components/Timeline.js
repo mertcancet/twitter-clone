@@ -5,11 +5,12 @@ const Timeline = () => {
   return (
     <div className=' w-[355px] hidden md:block sticky top-0 z-10 h-screen'>
       <SearchBox />
-      <div className='m-3'>
+      <div className='m-3 '>
         <TwitterTimelineEmbed
           sourceType='profile'
           screenName='reactjs'
           theme='dark'
+          options={{ height: '1000' }}
         />
       </div>
     </div>
