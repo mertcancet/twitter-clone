@@ -3,13 +3,13 @@ import 'firebase/database';
 import 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCvC08IUABBtkuQSxHRxQMHw4-i6g1zzj8',
-  authDomain: 'twitter-clone-51be3.firebaseapp.com',
-  projectId: 'twitter-clone-51be3',
-  storageBucket: 'twitter-clone-51be3.appspot.com',
-  messagingSenderId: '862885237018',
-  appId: '1:862885237018:web:c9ff97c3e4c7b30c065ca3',
-  measurementId: 'G-WCNTTYXWVK',
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 const app = !firebase.apps.length
