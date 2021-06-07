@@ -31,6 +31,7 @@ I used firestore database so you can tweet on my demo link.
 - [Classnames](https://www.npmjs.com/package/classnames)
 
 This project was bootstrapped with [Create Next App](https://nextjs.org/docs/api-reference/create-next-app).
+
 Used Vercel for deployment. :earth_americas: 
 ### Installation & Run
 You have to create firebase acount and write configuration key to firebase.js folder.
