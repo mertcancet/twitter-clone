@@ -32,7 +32,7 @@ I created a simple Twitter Clone application using TailwindCss  and NextJS. I us
 This project was bootstrapped with [Create Next App](https://nextjs.org/docs/api-reference/create-next-app).
 
 ### Installation & Run
-You have to create firebase acount and write to configuration key to firebase.js folder.
+You have to create firebase acount and write configuration key to firebase.js folder.
 
 ```sh
  git clone https://github.com/mertcancet/twitter-clone.git
