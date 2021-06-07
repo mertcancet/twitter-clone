@@ -18,6 +18,9 @@ const TweetBox = () => {
       setContent('');
     }
   };
+  const mouseOver = () => {
+    console.log('selam');
+  };
   return (
     <div className='flex justify-between h-[125px]   twitter-border  border-b-[0.7px]'>
       <div className='ml-2 mt-1 flex items-start '>
@@ -48,6 +51,7 @@ const TweetBox = () => {
           primary
           className='mb-2 mr-2 focus:outline-none py-2'
           onClick={sendTweet}
+          onMouseOver={mouseOver}
         >
           Tweetle
         </Button>

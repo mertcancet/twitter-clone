@@ -2,6 +2,7 @@ import React from 'react';
 import cx from 'classnames';
 
 const Button = ({ primary, secondary, className, children, ...props }) => {
+
   return (
     <button
       className={cx('btn', {
